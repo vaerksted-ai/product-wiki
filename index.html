@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Wiki — coming soon</title>
+  <meta name="description" content="A product playbook for a world where building got cheap. Written from inside Maskin.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Product Wiki — coming soon">
+  <meta property="og:description" content="A product playbook for a world where building got cheap. Written from inside Maskin.">
+  <meta property="og:url" content="https://productwiki.online/">
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #8a8a8a;
+      --bg: #fafaf7;
+      --measure: 34rem;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: clamp(2rem, 6vw, 5rem) clamp(1.5rem, 6vw, 5rem);
+    }
+    .stack {
+      max-width: var(--measure);
+    }
+    h1 {
+      font-family: Charter, "Source Serif Pro", "Iowan Old Style", Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: clamp(1.75rem, 4.5vw, 2.6rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin: 0 0 1.25rem 0;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.6vw, 1.0625rem);
+      max-width: 30rem;
+    }
+    footer {
+      padding: 1.5rem clamp(1.5rem, 6vw, 5rem);
+      color: var(--muted);
+      font-size: 0.8125rem;
+      letter-spacing: 0.02em;
+    }
+    @media (max-width: 480px) {
+      main { padding: 2rem 1.5rem; }
+      footer { padding: 1.25rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="stack">
+      <h1>A product playbook for a world where building got cheap.</h1>
+      <p>Written from inside Maskin, where we run the company through AI agents. Nothing to read here yet.</p>
+    </div>
+  </main>
+  <footer>Maskin · Copenhagen</footer>
+</body>
+</html>
