@@ -1,0 +1,18 @@
+<details class="topbar">
+  <summary><span>{% if drawerLabel %}{{ drawerLabel }}{% else %}{{ site.title }}{% endif %}</span></summary>
+  <div class="drawer">
+    <ol>
+    {% for chapter in collections.chapters %}
+      {% set isLive = chapter.data.status == "live" %}
+      <li>
+        {% if isLive %}
+          <a class="live" href="{{ chapter.url }}">{{ chapter.data.order | pad2 }} · {{ chapter.data.title }}</a>
+        {% else %}
+          <a class="pending">{{ chapter.data.order | pad2 }} · {{ chapter.data.title }} — soon</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+      <li class="divider"><a href="/next/">Where you go next</a></li>
+    </ol>
+  </div>
+</details>
