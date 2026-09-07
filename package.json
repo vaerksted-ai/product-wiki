@@ -1,0 +1,19 @@
+{
+  "name": "product-wiki",
+  "version": "0.1.0",
+  "private": true,
+  "description": "productwiki.online — Maskin's post-AI PM playbook microsite. 11ty static site, deployed to Cloudflare Pages.",
+  "scripts": {
+    "prebuild": "node scripts/gen-placeholders.js",
+    "build": "eleventy",
+    "preserve": "node scripts/gen-placeholders.js",
+    "serve": "eleventy --serve --port=9333 --incremental",
+    "clean": "rm -rf _site"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
