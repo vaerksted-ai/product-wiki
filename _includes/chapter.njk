@@ -1,0 +1,25 @@
+---
+layout: base.njk
+---
+<div class="shell">
+  {% include "nav.njk" %}
+  {% include "topbar.njk" %}
+  <main class="book" id="content">
+    <article>
+      <p class="eyebrow">Chapter {{ order | pad2 }}</p>
+      <h1 class="chapter-title">{{ title }}.</h1>
+      {% if deck %}<p class="deck">{{ deck }}</p>{% endif %}
+      {{ content | safe }}
+    </article>
+    {% include "footer.njk" %}
+  </main>
+</div>
+{% set jsonPayload = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "author": { "@type": "Person", "name": site.author },
+  "datePublished": (date | isoDate) or "",
+  "mainEntityOfPage": (site.url + page.url)
+} %}
+<script type="application/ld+json">{{ jsonPayload | dump | safe }}</script>
