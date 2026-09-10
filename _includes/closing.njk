@@ -1,0 +1,13 @@
+---
+layout: base.njk
+---
+<div class="shell">
+  {% include "nav.njk" %}
+  {% include "topbar.njk" %}
+  <main class="book" id="content">
+    <p class="eyebrow">Closing</p>
+    <h1 class="chapter-title">{{ title }}.</h1>
+    {{ content | safe }}
+    {% include "footer.njk" %}
+  </main>
+</div>

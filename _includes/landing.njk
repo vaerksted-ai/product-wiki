@@ -1,0 +1,34 @@
+---
+layout: base.njk
+---
+<div class="landing-shell">
+  {% include "nav.njk" %}
+  {% include "topbar.njk" %}
+  <main class="landing-main" id="content">
+    <p class="eyebrow">A playbook, in six chapters</p>
+    <h1 class="hero">{{ hero }}</h1>
+    <p class="thesis">{{ thesis }}</p>
+    <p class="chapters-h">The chapters</p>
+    <ol class="chapter-list">
+    {% for chapter in collections.chapters %}
+      {% set isLive = chapter.data.status == "live" %}
+      <li{% if not isLive %} class="pending"{% endif %}>
+        {% if isLive %}
+          <a href="{{ chapter.url }}">{{ chapter.data.title }}<span class="cd">{{ chapter.data.deck }}</span></a>
+        {% else %}
+          <a>{{ chapter.data.title }}<span class="cd">{{ chapter.data.deck }}</span></a>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ol>
+    {% set firstLive = false %}
+    {% for chapter in collections.chapters %}
+      {% if not firstLive and chapter.data.status == "live" %}
+        {% set firstLive = chapter %}
+        <a href="{{ chapter.url }}" class="start-here">Start with chapter one</a>
+      {% endif %}
+    {% endfor %}
+    {{ content | safe }}
+    {% include "footer.njk" %}
+  </main>
+</div>
