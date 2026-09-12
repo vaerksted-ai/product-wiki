@@ -1,20 +1,20 @@
 ---
 layout: closing.njk
 title: Where you go next
-description: The playbook has one directive — stop reading, and go sell the next thing you were going to build.
+description: The playbook has one directive — stop reading, and go prove demand for the next thing you were going to build.
 permalink: /next/
+status: validated
+order: 99
 ---
 
-<p>You've read six chapters. None of them will build anything for you.</p>
+You've read six chapters. None of them will build anything for you.
 
-<p>The playbook has one directive: stop reading, and go sell the next thing you were going to build. Not describe it. Not scope it. Sell it — to one named person, for a price they'll pay in the next fortnight.</p>
+The playbook has one directive: stop reading, and go prove demand for the next thing you were going to build. Not describe it. Not scope it. Take it to one named person. Name what you'd charge them. Put a close condition on it: a yes or a no inside the next fortnight. That's a bet.
 
-<p>If that person exists, you have a bet. Open it.</p>
+If they close, you have a bet. Open it.
 
-<p>If they don't, you have a hypothesis. Keep it in the notebook — it might become a bet, later, once you find the person. Or it might not, and that's the discipline working.</p>
+If they don't, you have a hypothesis. Keep it in the notebook. It might become a bet later, once you find the person. Or it might not, and that's the discipline working.
 
-<p>There is no next essay to click. There is no newsletter to sign up for. There is one action, and it isn't on this page.</p>
+There is no next essay to click. There is no newsletter to sign up for. There is one action, and it isn't on this page.
 
-<hr class="sep">
-
-<p class="sans" style="color:var(--muted); font-size:0.9375rem;"><a href="/">← Back to the chapter list</a></p>
+One exception. It isn't the action either: [Maskin implements this playbook](/how-maskin-implements-this-playbook/). Read it if you want the shape of the tool underneath. Otherwise, close the tab.
