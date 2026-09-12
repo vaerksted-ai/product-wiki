@@ -1,0 +1,23 @@
+<aside class="rail" aria-label="Chapter navigation">
+  <p class="rail-eyebrow">Product Wiki</p>
+  <h2 class="rail-title"><a href="/">{{ site.title }}</a></h2>
+  <ol>
+  {% for chapter in collections.chapters %}
+    {% set isLive = chapter.data.status == "live" %}
+    {% set isCurrent = page.url and (page.url == chapter.url) %}
+    {% set classes = "" %}
+    {% if isCurrent %}{% set classes = "current" %}{% endif %}
+    {% if not isLive %}{% set classes = (classes + " pending") | trim %}{% endif %}
+    <li{% if classes %} class="{{ classes }}"{% endif %}>
+      {% if isLive %}
+        <a href="{{ chapter.url }}">{{ chapter.data.title }}</a>
+      {% else %}
+        <a>{{ chapter.data.title }}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ol>
+  <div class="rail-closing{% if page.url == '/next/' %} active{% endif %}">
+    <a href="/next/">Where you go next</a>
+  </div>
+</aside>

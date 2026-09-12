@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+<div class="shell">
+  {% include "nav.njk" %}
+  {% include "topbar.njk" %}
+  <main class="book" id="content">
+    <div class="pending-page">
+      <p class="eyebrow">Chapter {{ order | pad2 }} · Not yet</p>
+      <h1>{{ title }}.</h1>
+      <p>Coming when it's written. There's no useful signal in shipping a placeholder — you'd read it and lose ten minutes.</p>
+      <p>Chapter one carries the load until this one lands. It's where I'd start.</p>
+      <a class="back" href="/">← Read chapter one</a>
+    </div>
+    {% include "footer.njk" %}
+  </main>
+</div>
