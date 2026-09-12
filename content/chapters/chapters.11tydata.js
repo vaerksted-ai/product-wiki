@@ -2,13 +2,13 @@ module.exports = {
   tags: ["chapter"],
   eleventyComputed: {
     layout: (data) =>
-      data.status === "live" ? "chapter.njk" : "pending-chapter.njk",
+      ["live", "validated"].includes(data.status) ? "chapter.njk" : "pending-chapter.njk",
     permalink: (data) => {
       const slug = data.slug || data.page.fileSlug;
-      if (data.status === "live") return `/${slug}/index.html`;
+      if (["live", "validated"].includes(data.status)) return `/${slug}/index.html`;
       return false;
     },
     robots: (data) =>
-      data.status === "live" ? "index,follow" : "noindex",
+      ["live", "validated"].includes(data.status) ? "index,follow" : "noindex",
   },
 };
