@@ -2,7 +2,7 @@
 title: "Two moments, one background"
 deck: "Humans own definition and review. Everything between is loops — and the loop tells you when to come back."
 description: "The two-moments-plus-one-background model for post-AI PM work, and where the four human re-entry situations (approval, expertise, variance, interesting) fit inside it."
-order: 2
+order: 4
 status: validated
 ---
 

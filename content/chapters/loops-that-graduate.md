@@ -1,7 +1,7 @@
 ---
 title: Loops that graduate
 deck: "Autonomous processes run gated on quality, graduate when proven, demote when quality drops."
-order: 6
+order: 7
 slug: loops-that-graduate
 status: validated
 author: Sebastian Kirkegaard

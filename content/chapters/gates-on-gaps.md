@@ -1,7 +1,7 @@
 ---
 title: Gates on gaps, not on time
 deck: Every LLM-native tool ships to fill gaps with plausibility. This one refuses to move until the gaps are closed.
-order: 3
+order: 2
 slug: gates-on-gaps
 status: live
 date: 2026-09-09
