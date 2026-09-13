@@ -1,20 +1,30 @@
 ---
-title: Adversarial agents, by design
-deck: "Agents structurally instrumented to push back on the human. Not helpful-assistant."
-order: 5
-slug: adversarial-agents
+title: Humans direct, agents detect
+deck: "Adversarial by design — agents structurally instrumented to push back on the human. Not helpful-assistant."
+order: 6
+slug: humans-direct-agents-detect
 status: validated
 author: Sebastian Kirkegaard
-date: 2026-09-07
+date: 2026-09-13
 ---
 
 Helpful assistant is the wrong stance for a PM tool.
 
 Every AI product shipping today ships helpful assistant as the model out of the box: compliant, agreeable, oriented to produce what the user asked for. That posture is fine when you're drafting an email or refactoring a function. It is exactly wrong when you're deciding what to build.
 
-A real cross-functional team pushes back on the PM. Engineers say *that's a two-year build.* Designers say *this pattern will confuse users.* Data says *the hypothesis is wrong.* The PM's job is not to be surrounded by yes; it's to test the strongest version of no. Compliant agents can't play that role. They agree with the last thing you said, then agree with the opposite when you push, then produce a plausible synthesis of both. That's not a colleague. That's a mirror.
+The PM's job is not to be surrounded by yes; it's to test the strongest version of no. Compliant agents can't play that role. They agree with the last thing you said, then agree with the opposite when you push, then produce a plausible synthesis of both. That's not a colleague. That's a mirror.
 
 So we cast agents differently. Not as assistants. As adversaries.
+
+## Humans direct; agents detect
+
+There is a cleaner version of the claim: humans direct, agents detect.
+
+Vision — where the company is headed, what "good" looks like three years out, which futures are worth fighting for — is not delegable. Moral judgment isn't either. Neither is tacit context: the reasons a founder killed a promising direction that nobody wrote down but everyone senior remembers. Those are origination-of-ends decisions. They belong to humans. Not because agents can't produce something that resembles them — they can — but because being wrong about them is a category of wrong we don't want the org to accept from a machine.
+
+Everything else — noise-to-signal on a hundred customer conversations, drift-spotting on a spec that used to say one thing and now says another, gap identification against the graph — is exactly what agents are for. That's the trade. Humans set direction and ratify corrections. Agents surface, criticise, and refuse to let a bet through with holes.
+
+The asymmetry isn't a slogan. It's the load-bearing constraint the rest of the architecture is designed to enforce.
 
 ## What "adversarial by design" actually means
 
@@ -33,14 +43,6 @@ In Maskin, it comes from the graph.
 The graph carries every typed bet, every closed loop, every invalidated hypothesis, every killed feature the workspace has recorded. When a reviewer agent flags a gap in your spec, it isn't emitting a vibe — it's checking your new bet against the accumulated history of the ones that failed for the same reason. The critique has teeth because the substrate has evidence. The reviewer can point at the bet from last quarter that was defined at the same altitude, shipped for the same reason, and missed by the same margin, and say *this is that one again.*
 
 Pull the graph out of the picture and you're back to prompt-and-pray. The whole architectural move — the reason we typed the primitives in the first place — is to give critique a grounded surface to argue from.
-
-## Humans direct; agents detect
-
-There is a cleaner version of the same claim: humans direct, agents detect.
-
-Vision — where the company is headed, what "good" looks like three years out, which futures are worth fighting for — is not delegable. Moral judgment isn't either. Neither is tacit context: the reasons a founder killed a promising direction that nobody wrote down but everyone senior remembers. Those are origination-of-ends decisions. They belong to humans. Not because agents can't produce something that resembles them — they can — but because being wrong about them is a category of wrong we don't want the org to accept from a machine.
-
-Everything else — noise-to-signal on a hundred customer conversations, drift-spotting on a spec that used to say one thing and now says another, gap identification against the graph — is exactly what agents are for. That's the trade. Humans set direction and ratify corrections. Agents surface, criticise, and refuse to let a bet through with holes.
 
 ## The trap you have to design around
 
