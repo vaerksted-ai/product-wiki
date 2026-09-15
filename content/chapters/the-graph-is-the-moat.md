@@ -3,7 +3,7 @@ title: The graph is the moat
 deck: Typed accumulated context compounds. Agents are cast on top, and interchangeable.
 order: 4
 slug: the-graph-is-the-moat
-status: validated
+status: live
 author: Sebastian Kirkegaard
 date: 2026-09-07
 ---
