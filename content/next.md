@@ -3,7 +3,7 @@ layout: closing.njk
 title: Where you go next
 description: The playbook has one directive — stop reading, and go prove demand for the next thing you were going to build.
 permalink: /next/
-status: validated
+status: live
 order: 99
 ---
 
@@ -17,4 +17,4 @@ If they don't, you have a hypothesis. Keep it in the notebook. It might become a
 
 There is no next essay to click. There is no newsletter to sign up for. There is one action, and it isn't on this page.
 
-One exception. It isn't the action either: [Maskin implements this playbook](/how-maskin-implements-this-playbook/). Read it if you want the shape of the tool underneath. Otherwise, close the tab.
+One exception, and it isn't the action either. The tool underneath this playbook is built to run exactly the discipline the chapters describe, signal to shipped outcomes. It's the byline in the footer, not the point. Otherwise, close the tab.
