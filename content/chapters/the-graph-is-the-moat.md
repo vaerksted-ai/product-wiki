@@ -4,7 +4,7 @@ deck: Typed accumulated context compounds. Agents are cast on top, and interchan
 order: 4
 slug: the-graph-is-the-moat
 status: live
-author: Sebastian Kirkegaard
+author: Sebastian Krumhausen
 date: 2026-09-07
 ---
 
