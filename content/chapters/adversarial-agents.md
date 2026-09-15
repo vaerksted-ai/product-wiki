@@ -4,7 +4,7 @@ deck: "Agents structurally instrumented to push back on the human. Not helpful-a
 order: 5
 slug: adversarial-agents
 status: live
-author: Sebastian Kirkegaard
+author: Sebastian Krumhausen
 date: 2026-09-07
 ---
 
