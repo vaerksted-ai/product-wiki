@@ -6,7 +6,7 @@ hero: A product playbook for a world where building got cheap.
 thesis: Builders are biased towards building. The post-AI PM discipline is selling before building — and cutting everything between definition and review.
 ogType: website
 permalink: /
-status: validated
+status: live
 order: 0
 ---
 
@@ -22,7 +22,7 @@ I write this as the founder of Maskin, building the tool underneath. I write abo
 
 ## Who this is for
 
-You are a CPO, a founder, or a head of product at a Series B who has already read the essays. You already believe building got cheaper. You already know the frameworks (RICE, JTBD, OKRs, shortest-latest-first) are proxies for the team building the right thing, not laws of nature. What you do not have is a coherent operating model for the middle: what runs in the space between definition and shipped outcome, once your engineers are no longer the constraint. That is what the five chapters are for.
+You are a CPO, a founder, or a head of product at a Series B who has already read the essays. You already believe building got cheaper. You already know the frameworks (RICE, JTBD, OKRs, shortest-latest-first) are proxies for the team building the right thing, not laws of nature. What you do not have is a coherent operating model for the middle: what runs in the space between definition and shipped outcome, once your engineers are no longer the constraint. That is what the chapters are for.
 
 If you have not read the essays, come back after you have. This playbook takes the same starting premise (build got cheap, cognition didn't) and skips to the interesting part: what to do about it.
 
@@ -38,7 +38,7 @@ You can read the closing chapter for the argument in full. What follows here is 
 
 ## The activation rule
 
-Before the five chapters, one rule.
+Before the chapters, one rule.
 
 **No named buyer, no open bet.**
 
@@ -52,23 +52,25 @@ Everything downstream, every gate in every chapter, assumes this rule holds. If 
 
 Anti-vanity by construction. Not anti-vanity by review.
 
-## What the five chapters do
+## What the chapters do
 
-**Chapter 1 — Gates on gaps, not on time.** The harness refuses to advance a bet when the implicit context still has holes. Deadlines were the honest discipline when engineers were scarce. Once they are not, deadlines become how you accumulate a graph of confidently wrong work. Gap-gates replace them.
+**Sell before you build.** The front door. Proof of demand replaces build-cost as the discipline that keeps teams honest. No named buyer, no open bet.
 
-**Chapter 2 — The graph is the moat.** Typed accumulated context compounds; agents are the interchangeable interface cast on top of it. The moat is not which model you call. The moat is the team memory the calls run on.
+**Two moments, one background.** Humans own the definition at the front and the review at the end. The middle runs as loops.
 
-**Chapter 3 — Adversarial agents, by design.** Agents structurally instrumented to push back on the human, not to help. Sycophantic assistants are a category error inside a system of record. Humans direct; agents detect.
+**Gates on gaps, not on time.** The harness refuses to advance a bet when the implicit context still has holes. Deadlines were the honest discipline when engineers were scarce. Once they are not, deadlines become how you accumulate a graph of confidently wrong work. Gap-gates replace them.
 
-**Chapter 4 — Loops that graduate.** Autonomous processes run in a learning phase, graduate when their quality has been proven, and demote when their quality drops. The state machine is internal today, user-facing on the roadmap. Either way, the shape is the same: no loop is trusted by default and no loop is distrusted forever.
+**The graph is the moat.** Typed accumulated context compounds; agents are the interchangeable interface cast on top of it. The moat is not which model you call. The moat is the team memory the calls run on.
 
-**Chapter 5 — Two moments, one background.** Humans own the definition at the front and the review at the end. The middle runs as loops. The chapter argues for the shape and against the four situations where a human keeps trying to climb back in.
+**Adversarial agents, by design.** Agents structurally instrumented to push back on the human, not to help. Sycophantic assistants are a category error inside a system of record. Humans direct; agents detect.
+
+**Loops that graduate.** Autonomous processes run in a learning phase, graduate when their quality has been proven, and demote when their quality drops. The state machine is internal today, user-facing on the roadmap. Either way, the shape is the same: no loop is trusted by default and no loop is distrusted forever.
 
 Each chapter is a claim, an argument, and the anti-pattern it rules out. Read them in order the first time.
 
-## A bridge to chapter 1
+## A bridge to the first chapter
 
-The activation rule you just read is the gate at the front of the bet lifecycle. Chapter 1 is the gate inside it. Once a bet is open, the harness holds it on every status transition until the gaps in its implicit context are closed. Same discipline, one altitude down: the front-door rule refuses to open a bet without a buyer; the in-flight gates refuse to advance one that still has holes. Both are anti-slop by construction, not by review. Both replace time-boxing as the mechanism that keeps a team honest. Chapter 1 is where the mechanism lives.
+The activation rule you just read is the gate at the front of the bet lifecycle. The next chapter is the gate inside it. Once a bet is open, the harness holds it on every status transition until the gaps in its implicit context are closed. Same discipline, one altitude down: the front-door rule refuses to open a bet without a buyer; the in-flight gates refuse to advance one that still has holes. Both are anti-slop by construction, not by review. Both replace time-boxing as the mechanism that keeps a team honest.
 
 ## What this playbook is not
 
@@ -80,7 +82,7 @@ It is not a curation of what other PM thinkers are saying. Cagan, Cohen, Mehta, 
 
 **Maskin ships this playbook as executing infrastructure — signal → shipped outcomes.** The company underneath this book builds a tool for teams that want to run the discipline the chapters describe. The tool is a footer byline on every page. The book is the point.
 
-Start with chapter 1.
+Start with the first chapter.
 
 ---
 
