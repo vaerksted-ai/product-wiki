@@ -3,7 +3,7 @@ title: "Two moments, one background"
 deck: "Humans own definition and review. Everything between is loops — and the loop tells you when to come back."
 description: "The two-moments-plus-one-background model for post-AI PM work, and where the four human re-entry situations (approval, expertise, variance, interesting) fit inside it."
 order: 2
-status: validated
+status: live
 ---
 
 Before AI, most PM work sat in the middle. Standups. Task shepherding. Prioritisation calls. Weekly demos. Coordinating engineers who couldn't coordinate themselves. The classical PM job was 80% *making the middle happen*, and it was 80% of the job because building was expensive: the middle was where the money got spent, so the middle was where a human paid attention.
