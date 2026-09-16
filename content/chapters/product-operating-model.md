@@ -2,7 +2,7 @@
 title: The product operating model as your shared context layer
 deck: "The operating model is what produces your context. That context is the shared layer both humans and agents work from, so nobody invents and nobody assumes. Hallucination and assuming are the same thing."
 order: 2
-slug: shared-context-layer
+slug: product-operating-model
 status: live
 author: Sebastian Krumhausen
 date: 2026-09-16
