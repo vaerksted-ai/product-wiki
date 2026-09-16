@@ -82,7 +82,7 @@ Seven chapters, plus a closing, each argued in its own right.
 
 **Ch2 — The product operating model as your shared context layer.** The context both humans and agents work from, so nobody invents and nobody assumes.
 
-**Ch3 — Infinite scale.** A team composed of humans and specialist agents, sized to the problem without limit.
+**Ch3 — Composition, not headcount.** A team composed of humans and specialist agents, sized to the problem without limit.
 
 **Ch4 — Guardrails to reduce assumptions and hallucinations.** Agents whose job is to block, not help.
 

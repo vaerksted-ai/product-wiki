@@ -1,8 +1,8 @@
 ---
-title: Infinite scale
+title: Composition, not headcount
 deck: "A product team is no longer a fixed ratio of humans. It is a composition of humans and specialist agents, sized up and down to the problem, without limit."
 order: 3
-slug: infinite-scale
+slug: composition-not-headcount
 status: live
 author: Sebastian Krumhausen
 date: 2026-09-16
