@@ -3,7 +3,7 @@ title: Run it as loops, not projects
 deck: "A project is a shape you deliver a thing in. A loop is a shape you run a thing in. Post-AI, only one of them holds."
 order: 6
 slug: run-it-as-loops-not-projects
-status: draft
+status: live
 author: Sebastian Krumhausen
 date: 2026-09-16
 ---
