@@ -8,8 +8,8 @@
 # Format: <from> <to> <status>
 
 # --- retired v1 chapter URLs ---
-/gates-on-gaps/                          /you-can-only-sell/                301
-/gates-on-gaps                           /you-can-only-sell/                301
+/gates-on-gaps/                          /guardrails/                       301
+/gates-on-gaps                           /guardrails/                       301
 /the-graph-is-the-moat/                  /product-operating-model/          301
 /the-graph-is-the-moat                   /product-operating-model/          301
 /adversarial-agents/                     /guardrails/                       301
