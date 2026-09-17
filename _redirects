@@ -1,0 +1,30 @@
+# Cloudflare Pages redirects.
+# Retired v1 chapter URLs -> their IA-v8 destinations, so inbound links do not 404
+# after the v1 URLs were removed in PR #13.
+#
+# Both the trailing-slash and bare forms are listed: inbound links in the wild use
+# both, and Pages matches the source path literally.
+#
+# Format: <from> <to> <status>
+
+# --- retired v1 chapter URLs ---
+/gates-on-gaps/                          /guardrails/                       301
+/gates-on-gaps                           /guardrails/                       301
+/the-graph-is-the-moat/                  /product-operating-model/          301
+/the-graph-is-the-moat                   /product-operating-model/          301
+/adversarial-agents/                     /guardrails/                       301
+/adversarial-agents                      /guardrails/                       301
+/loops-that-graduate/                    /run-it-as-loops-not-projects/     301
+/loops-that-graduate                     /run-it-as-loops-not-projects/     301
+/sell-before-you-build/                  /you-can-only-sell/                301
+/sell-before-you-build                   /you-can-only-sell/                301
+/two-moments-one-background/             /two-moments/                      301
+/two-moments-one-background              /two-moments/                      301
+/infinite-scale/                         /composition-not-headcount/        301
+/infinite-scale                          /composition-not-headcount/        301
+/loops-not-projects/                     /run-it-as-loops-not-projects/     301
+/loops-not-projects                      /run-it-as-loops-not-projects/     301
+/shared-context-layer/                   /product-operating-model/          301
+/shared-context-layer                    /product-operating-model/          301
+/drafts/run-it-as-loops-not-projects/    /run-it-as-loops-not-projects/     301
+/drafts/run-it-as-loops-not-projects     /run-it-as-loops-not-projects/     301
