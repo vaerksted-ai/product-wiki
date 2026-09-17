@@ -56,6 +56,24 @@ This is the inversion of the RAG-only school, which treats the model plus retrie
 
 The pragmatic middle path, bolt an agent-memory SDK onto whatever work-graph you already have, inherits the shape of the graph it bolts onto. If the graph underneath is doc-shaped or ticket-shaped, the agent memory ends up doc-shaped or ticket-shaped. The unit of committed work still is not first-class. The moat still is not the moat.
 
+## From insight to outcome
+
+The primitives assemble into a shape any team that has run continuous discovery will recognise, but the ownership moves.
+
+Business context lives in the wiki the operating model produces — a living record of what the team has bet on, killed, and learned, read by every human and every agent before they answer. Not a Notion page written once and rotting. Not a doc-graph. The wiki is what the accumulated evidence looks like when it is a typed artefact rather than prose someone has to remember to update.
+
+Observations enter as insights. An insight is a typed observation with evidence attached — a customer said this, the funnel did this, the win-loss log said that. Insights accumulate. When enough of them cluster on the same shape of problem, the operating model has an opportunity.
+
+The opportunity is not its own object. It is a bet before it is a bet — the earliest state a bet takes, when the problem is named and sized and the evidence is still being weighed. Giving opportunity its own artefact would fork it from the thing it becomes, so the team ends up maintaining a discovery document and a delivery document for one call. Instead the bet opens as the opportunity and graduates to shape when it earns it. Same object, earlier status. A whiteboard photographed at an offsite is still replaced — but by a bet, not a brief.
+
+The team ranks bets against other bets, argues with them, weighs them against the evidence strength attached to them, promotes or parks them. The opportunity does not get its own ranking ritual; it is a bet the team has not yet committed resources to.
+
+When an opportunity earns the right to shape, the team enumerates candidate solutions. Not one. Multiple. Each one a sketch with an approach and a cost, sitting side by side so the chosen solution ships against its rejected alternatives, not against a blank page. The chosen candidate becomes the shape of the bet.
+
+Then real work commits. Here the operating model earns its keep: the tasks the bet decomposes into go, primarily, to specialist agents. Humans do not manage a Jira board of subtasks. They own the definition and the review — the opportunity at the front, the outcome at the end. Task management, the ceremony that ate the last era's PM week, has no place in this loop because there is no scarce human specialist to synchronise. Agents pick up tasks, escalate when they need direction, and file outcomes back into the graph.
+
+Every outcome, won or lost, writes back into the wiki as evidence the next opportunity inherits. Not on a schedule. Not because a quarter ended. Continuously, by construction.
+
 ## What this rules out
 
 - **The ticket-graph.** Epics, stories, subtasks. Coordination overhead in graph form. Fine for tracking who is doing what; wrong for accumulating what the team has learned.
