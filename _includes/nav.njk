@@ -5,9 +5,11 @@
   {% for chapter in collections.chapters %}
     {% set isLive = chapter.data.status == "live" %}
     {% set isCurrent = page.url and (page.url == chapter.url) %}
+    {% set isPreface = chapter.data.kind == "preface" %}
     {% set classes = "" %}
     {% if isCurrent %}{% set classes = "current" %}{% endif %}
     {% if not isLive %}{% set classes = (classes + " pending") | trim %}{% endif %}
+    {% if isPreface %}{% set classes = (classes + " unnumbered") | trim %}{% endif %}
     <li{% if classes %} class="{{ classes }}"{% endif %}>
       {% if isLive %}
         <a href="{{ chapter.url }}">{{ chapter.data.title }}</a>
@@ -18,6 +20,6 @@
   {% endfor %}
   </ol>
   <div class="rail-closing{% if page.url == '/next/' %} active{% endif %}">
-    <a href="/next/">Ch7 — How to start</a>
+    <a href="/next/">How to start</a>
   </div>
 </aside>

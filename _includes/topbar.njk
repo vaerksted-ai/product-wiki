@@ -4,15 +4,18 @@
     <ol>
     {% for chapter in collections.chapters %}
       {% set isLive = chapter.data.status == "live" %}
+      {% set isPreface = chapter.data.kind == "preface" %}
       <li>
-        {% if isLive %}
+        {% if isPreface %}
+          <a class="live" href="{{ chapter.url }}">Preface · {{ chapter.data.title }}</a>
+        {% elif isLive %}
           <a class="live" href="{{ chapter.url }}">{{ chapter.data.order | pad2 }} · {{ chapter.data.title }}</a>
         {% else %}
           <a class="pending">{{ chapter.data.order | pad2 }} · {{ chapter.data.title }} — soon</a>
         {% endif %}
       </li>
     {% endfor %}
-      <li class="divider"><a href="/next/">Where you go next</a></li>
+      <li class="divider"><a href="/next/">How to start</a></li>
     </ol>
   </div>
 </details>
