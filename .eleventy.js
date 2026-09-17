@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "public": "/" });
   eleventyConfig.addPassthroughCopy("_headers");
+  eleventyConfig.addPassthroughCopy("_redirects");
 
   eleventyConfig.addCollection("chapters", (collectionApi) =>
     collectionApi
