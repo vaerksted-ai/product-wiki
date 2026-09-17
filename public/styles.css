@@ -165,6 +165,9 @@ body {
   letter-spacing: 0.02em;
 }
 
+.rail li.unnumbered { counter-increment: none; }
+.rail li.unnumbered a::before { content: ""; }
+
 .rail-closing {
   margin-top: 2rem;
   padding-top: 1.25rem;
@@ -452,6 +455,9 @@ section.footnotes li:target {
   color: var(--muted);
   letter-spacing: 0.05em;
 }
+
+.chapter-list li.unnumbered { counter-increment: none; }
+.chapter-list li.unnumbered::before { content: ""; }
 
 .chapter-list a {
   font-family: Charter, Georgia, serif;
