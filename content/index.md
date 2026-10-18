@@ -1,9 +1,9 @@
 ---
 layout: landing.njk
 title: The Post-AI PM Playbook
-description: A product playbook for a world where building got cheap. Written by Sebastian Krumhausen.
-hero: A product playbook for a world where building got cheap.
-thesis: Builders are biased towards building. The post-AI PM discipline is selling before building — and cutting everything between definition and review.
+description: Building is cheap. Choosing wrong is expensive. Written by Sebastian Krumhausen.
+hero: Building is cheap. Choosing wrong is expensive.
+thesis: PMs used to ration scarce developers. Now they compose agent specialists inside a token budget — minimising feasibility, viability, and desirability risk through accelerated learning.
 ogType: website
 permalink: /
 status: validated
