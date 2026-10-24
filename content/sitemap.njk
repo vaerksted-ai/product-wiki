@@ -1,0 +1,18 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in collections.all %}
+{%- set robots = item.data.robots or "index,follow" %}
+{%- if item.url and item.url != "/404.html" and "noindex" not in robots %}
+  <url>
+    <loc>{{ site.url }}{{ item.url }}</loc>
+{%- if item.data.date %}
+    <lastmod>{{ item.data.date | isoDate }}</lastmod>
+{%- endif %}
+  </url>
+{%- endif %}
+{%- endfor %}
+</urlset>
