@@ -6,7 +6,7 @@ layout: base.njk
   {% include "topbar.njk" %}
   <main class="book" id="content">
     <article>
-      <p class="eyebrow">{% if kind == "preface" %}Preface{% else %}Chapter {{ order | pad2 }}{% endif %}</p>
+      <p class="eyebrow">{% if kind == "preface" %}Preface{% elif kind == "bridge" %}Maskin{% else %}Chapter {{ order | pad2 }}{% endif %}</p>
       <h1 class="chapter-title">{{ title }}.</h1>
       {% if deck %}<p class="deck">{{ deck }}</p>{% endif %}
       {{ content | safe }}
@@ -14,12 +14,3 @@ layout: base.njk
     {% include "footer.njk" %}
   </main>
 </div>
-{% set jsonPayload = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": title,
-  "author": { "@type": "Person", "name": site.author },
-  "datePublished": (date | isoDate) or "",
-  "mainEntityOfPage": (site.url + page.url)
-} %}
-<script type="application/ld+json">{{ jsonPayload | dump | safe }}</script>
