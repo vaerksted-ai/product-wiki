@@ -14,3 +14,12 @@ layout: base.njk
     {% include "footer.njk" %}
   </main>
 </div>
+{% set jsonPayload = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "author": { "@type": "Person", "name": site.author },
+  "datePublished": (date | isoDate) or "",
+  "mainEntityOfPage": (site.url + page.url)
+} %}
+<script type="application/ld+json">{{ jsonPayload | dump | safe }}</script>
