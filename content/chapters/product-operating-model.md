@@ -44,7 +44,7 @@ The context layer is not a doc-graph. It is not a ticket-graph. It is not a gene
 
 The load-bearing primitives are the unit-of-committed-work primitives: the bet, the insight, the close condition, the outcome. A bet is a unit of committed work with a testable close condition and an owner. An insight is an observation with evidence and a source. A close condition is the falsifiable claim that decides whether the bet was won or lost. An outcome is what the bet returned: accepted, rejected, revised, killed, still running.
 
-A ticket system does not hold these. A Jira epic to story to subtask is a task-decomposition graph, not a bets-and-evidence graph. It stores who is doing what in what order, not the unit of committed choice. A doc tool is different, because the tool is not the limit. Pages that link to each other with no type on the link store prose, and prose is what you write once and nobody updates. The same tool with typed links and evidence attached can hold a work-graph. The type is the point, not the tool.
+A ticket system does not hold these. A Jira epic to story to subtask is a task-decomposition graph, not a bets-and-evidence graph. It stores who is doing what in what order, not the unit of committed choice. A doc tool is different, because the tool is not the limit. Pages that link to each other with no type on the link store prose, and prose is what you write once and nobody updates. The same tool with typed links and evidence attached can hold a work-graph.
 
 Once the unit of committed choice is a first-class node, everything downstream changes. Agents pull from a specific bet's evidence, not from a corpus. Reviewers see which past bets an argument has already been made against. New hires read the context layer and understand not just what the team is doing, but what it chose not to do and why. The killed bets are as valuable as the shipped ones. Arguably more, because they are the evidence for pattern recognition.
 
@@ -62,15 +62,17 @@ You need one place where you save and link what you learn. A graph, a repository
 
 A typed link says what it is. This insight supports that opportunity. This opportunity was reviewed against that strategic context. A link that only says "related" is how a graph turns back into a pile of pages.
 
-Start with insights. An insight is an observation with a source: a customer said this, a call showed that, a competitor did this. Most of them are noise. One person mentioned it once, or nobody can say where it came from, or it points away from where you are going. Throw noise out, and write down that you did, so nobody finds it again and wonders.
+Start with insights. An insight is an observation with a source: a customer said this, a call showed that, a competitor did this. Some are noise: one person mentioned it once, or it points away from where you are going. Throw noise out, and write down that you did, so nobody finds it again and wonders.
 
 What is left is signal. Signal is an insight that holds up, usually because sources that do not know each other point the same way. Many mentions alone do not make signal.
 
 Group the signal into themes, and the themes into opportunities. An opportunity is a customer problem worth solving. It is not a feature. Keep few of them on purpose. If you hold a long list, you are not choosing.
 
-Then review each opportunity against your strategic context. Any opportunity can be argued for. The context is what you argue against.
+Then review each opportunity against your strategic context. Any opportunity can be argued for, and your strategic context is what you argue against.
 
 Because it all sits in one graph, every opportunity traces back to the evidence behind it, and forward to the bet it became.
+
+A word on words. In this chapter the context layer is the whole graph: everything the team has bet on, killed and learned. Strategic context is the part of it that is your written strategy, and it is the yardstick.
 
 ## The framework: four steps
 
@@ -83,15 +85,23 @@ Strategic context is the yardstick for the other three. Each step feeds the next
 
 Agents can do the reading and the grouping. A person decides what the strategy is, and a person decides which opportunity becomes a bet.
 
+In our own setup an opportunity is a bet in its earliest status, so steps three and four are one object at two points in time. As a way of thinking, keep them apart. Decide what is worth solving before you decide what to commit to.
+
+## Run it every week
+
+Let the reading run all the time. Make the review weekly. Once a week, look at what changed: which insights turned into signal, which opportunities still hold up against your strategic context, and whether one deserves a bet with an owner.
+
+Agents do the reading and the grouping. A person makes the call. Inside Maskin we call a loop like this a flow. The rest of this site says loop.
+
 ## From insight to outcome
 
 The primitives assemble into a shape any team that has run continuous discovery will recognise, but the ownership moves.
 
-Business context lives in the wiki the operating model produces — a living record of what the team has bet on, killed, and learned, read by every human and every agent before they answer. Not a page written once and left to rot. Not a pile of pages with untyped links either. The wiki is what the accumulated evidence looks like when every item has a type and every link says what it is, so nobody has to remember to update prose.
+Business context lives in the wiki the operating model produces — a living record of what the team has bet on, killed, and learned, read by every human and every agent before they answer. Not a page written once and left to rot. Not a pile of pages with untyped links either. The wiki is what the accumulated evidence looks like when every item has a type and every link says what it is, rather than prose someone has to remember to update.
 
 Observations enter as insights. An insight is a typed observation with evidence attached — a customer said this, the funnel did this, the win-loss log said that. Insights accumulate. When enough of them cluster on the same shape of problem, the operating model has an opportunity.
 
-The opportunity is not its own object. It is a bet before it is a bet — the earliest state a bet takes, when the problem is named and sized and the evidence is still being weighed. Giving opportunity its own artefact would fork it from the thing it becomes, so the team ends up maintaining a discovery document and a delivery document for one call. Instead the bet opens as the opportunity and graduates to shape when it earns it. Same object, earlier status. A whiteboard photographed at an offsite is still replaced — but by a bet, not a brief.
+The opportunity is not its own object. It is a bet before it is a bet — the earliest state a bet takes, when the problem is named and the evidence is still being weighed. Giving opportunity its own artefact would fork it from the thing it becomes, so the team ends up maintaining a discovery document and a delivery document for one call. Instead the bet opens as the opportunity and graduates to shape when it earns it. Same object, earlier status. A whiteboard photographed at an offsite is still replaced — but by a bet, not a brief.
 
 The team ranks bets against other bets, argues with them, weighs them against the evidence strength attached to them, promotes or parks them. The opportunity does not get its own ranking ritual; it is a bet the team has not yet committed resources to.
 
@@ -104,7 +114,7 @@ Every outcome, won or lost, writes back into the wiki as evidence the next oppor
 ## What this rules out
 
 - **The ticket-graph.** Epics, stories, subtasks. Coordination overhead in graph form. Fine for tracking who is doing what; wrong for accumulating what the team has learned.
-- **The untyped doc-graph.** Pages linked by backlinks and tags, with no type on the link and no evidence attached. Fine for reference material. Wrong for decisions with evidence. The tool is not the problem. The untyped link is.
+- **The untyped doc-graph.** Pages linked by backlinks and tags, with no type on the link and no evidence attached. Fine for reference material. Wrong for decisions with evidence.
 - **The general-purpose enterprise knowledge graph.** Powerful, but shaped for arbitrary reasoning over arbitrary domains. The work-graph needs less abstraction and more opinion about what a bet is and what an outcome is.
 - **RAG over unstructured corpora as the whole system.** Useful for retrieval; insufficient as the substrate for committed choice.
 - **"Agents as the product."** If the agent is the thing the customer buys, the customer's evidence goes into the agent's context window and vanishes when the session ends. Nothing compounds. No moat forms.
