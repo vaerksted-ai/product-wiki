@@ -44,7 +44,7 @@ The context layer is not a doc-graph. It is not a ticket-graph. It is not a gene
 
 The load-bearing primitives are the unit-of-committed-work primitives: the bet, the insight, the close condition, the outcome. A bet is a unit of committed work with a testable close condition and an owner. An insight is an observation with evidence and a source. A close condition is the falsifiable claim that decides whether the bet was won or lost. An outcome is what the bet returned: accepted, rejected, revised, killed, still running.
 
-None of those is captured well by ticket systems (a Jira epic to story to subtask is a task-decomposition graph, not a bets-and-evidence graph) or by doc systems (Notion, Confluence is a prose-graph, not a work-graph). They store coordination overhead, who is doing what in what order, not the unit of committed choice.
+A ticket system does not hold these. A Jira epic to story to subtask is a task-decomposition graph, not a bets-and-evidence graph. It stores who is doing what in what order, not the unit of committed choice. A doc tool is different, because the tool is not the limit. Pages that link to each other with no type on the link store prose, and prose is what you write once and nobody updates. The same tool with typed links and evidence attached can hold a work-graph.
 
 Once the unit of committed choice is a first-class node, everything downstream changes. Agents pull from a specific bet's evidence, not from a corpus. Reviewers see which past bets an argument has already been made against. New hires read the context layer and understand not just what the team is doing, but what it chose not to do and why. The killed bets are as valuable as the shipped ones. Arguably more, because they are the evidence for pattern recognition.
 
@@ -56,15 +56,52 @@ This is the inversion of the RAG-only school, which treats the model plus retrie
 
 The pragmatic middle path, bolt an agent-memory SDK onto whatever work-graph you already have, inherits the shape of the graph it bolts onto. If the graph underneath is doc-shaped or ticket-shaped, the agent memory ends up doc-shaped or ticket-shaped. The unit of committed work still is not first-class. The moat still is not the moat.
 
+## Set it up: one graph
+
+You need one place where you save and link what you learn. A graph, a repository, a set of linked pages. It can be Notion or something like it. The tool matters less than two things. Strategic context, insights and opportunities sit together in it. And every link says what it is.
+
+A typed link says what it is. This insight supports that opportunity. This opportunity was reviewed against that strategic context. A link that only says "related" is how a graph turns back into a pile of pages.
+
+Start with insights. An insight is an observation with a source: a customer said this, a call showed that, a competitor did this. Some are noise: one person mentioned it once, or it points away from where you are going. Throw noise out, and write down that you did, so nobody finds it again and wonders.
+
+What is left is signal. Signal is an insight that holds up, usually because sources that do not know each other point the same way. Many mentions alone do not make signal.
+
+Group the signal into themes, and the themes into opportunities. An opportunity is a customer problem worth solving. It is not a feature. Keep few of them on purpose. If you hold a long list, you are not choosing.
+
+Then review each opportunity against your strategic context. Any opportunity can be argued for, and your strategic context is what you argue against.
+
+Because it all sits in one graph, every opportunity traces back to the evidence behind it, and forward to the bet it became.
+
+In this chapter the context layer is the whole graph: everything the team has bet on, killed and learned. Strategic context is the part of it that is your written strategy, and it is the yardstick.
+
+## The framework: four steps
+
+1. **Strategic context.** Your written strategy. Your vision, who you serve and how much each type of customer counts, the beliefs you depend on, what is in focus now. It answers: what matters to us? Only a person changes it.
+2. **Insights.** Sourced observations about customers and the market. Noise is discarded, signal is kept and grouped. It answers: what are we hearing?
+3. **Opportunities.** Customer problems, grouped from signal, kept few, reviewed against the strategic context. It answers: what is worth solving?
+4. **Bets.** A shaped commitment with a time box, one owner and a close condition. It answers: what do we commit to?
+
+Strategic context is the yardstick for the other three. Each step feeds the next, and bets send what they learn back into the insights and the strategic context.
+
+Agents can do the reading and the grouping. A person decides what the strategy is, and a person decides which opportunity becomes a bet.
+
+In our own setup an opportunity is a bet in its earliest status, so steps three and four are one object at two points in time. As a way of thinking, keep them apart. Decide what is worth solving before you decide what to commit to.
+
+## Run it every week
+
+Let the reading run all the time, and review once a week. Look at what changed: which insights turned into signal, which opportunities still hold up against your strategic context, and whether one deserves a bet with an owner.
+
+Inside Maskin we call a loop like this a flow. The rest of this site says loop.
+
 ## From insight to outcome
 
 The primitives assemble into a shape any team that has run continuous discovery will recognise, but the ownership moves.
 
-Business context lives in the wiki the operating model produces — a living record of what the team has bet on, killed, and learned, read by every human and every agent before they answer. Not a Notion page written once and rotting. Not a doc-graph. The wiki is what the accumulated evidence looks like when it is a typed artefact rather than prose someone has to remember to update.
+Business context lives in the wiki the operating model produces — a living record of what the team has bet on, killed, and learned, read by every human and every agent before they answer. Not a page written once and left to rot. Not a pile of pages with untyped links either. The wiki is what the accumulated evidence looks like when every item has a type and every link says what it is, rather than prose someone has to remember to update.
 
 Observations enter as insights. An insight is a typed observation with evidence attached — a customer said this, the funnel did this, the win-loss log said that. Insights accumulate. When enough of them cluster on the same shape of problem, the operating model has an opportunity.
 
-The opportunity is not its own object. It is a bet before it is a bet — the earliest state a bet takes, when the problem is named and sized and the evidence is still being weighed. Giving opportunity its own artefact would fork it from the thing it becomes, so the team ends up maintaining a discovery document and a delivery document for one call. Instead the bet opens as the opportunity and graduates to shape when it earns it. Same object, earlier status. A whiteboard photographed at an offsite is still replaced — but by a bet, not a brief.
+The opportunity is not its own object. It is a bet before it is a bet — the earliest state a bet takes, when the problem is named and the evidence is still being weighed. Giving opportunity its own artefact would fork it from the thing it becomes, so the team ends up maintaining a discovery document and a delivery document for one call. Instead the bet opens as the opportunity and graduates to shape when it earns it. Same object, earlier status. A whiteboard photographed at an offsite is still replaced — but by a bet, not a brief.
 
 The team ranks bets against other bets, argues with them, weighs them against the evidence strength attached to them, promotes or parks them. The opportunity does not get its own ranking ritual; it is a bet the team has not yet committed resources to.
 
@@ -77,7 +114,7 @@ Every outcome, won or lost, writes back into the wiki as evidence the next oppor
 ## What this rules out
 
 - **The ticket-graph.** Epics, stories, subtasks. Coordination overhead in graph form. Fine for tracking who is doing what; wrong for accumulating what the team has learned.
-- **The doc-graph.** Wiki trees, backlinks, tags. Fine for reference material; wrong for decisions with evidence.
+- **The untyped doc-graph.** Pages linked by backlinks and tags, with no type on the link and no evidence attached. Fine for reference material. Wrong for decisions with evidence.
 - **The general-purpose enterprise knowledge graph.** Powerful, but shaped for arbitrary reasoning over arbitrary domains. The work-graph needs less abstraction and more opinion about what a bet is and what an outcome is.
 - **RAG over unstructured corpora as the whole system.** Useful for retrieval; insufficient as the substrate for committed choice.
 - **"Agents as the product."** If the agent is the thing the customer buys, the customer's evidence goes into the agent's context window and vanishes when the session ends. Nothing compounds. No moat forms.
@@ -98,6 +135,6 @@ That is what the moat feels like from the inside. Not a feature. Not a screen. A
 
 - **Building on.** Ted Nelson's Xanadu (1965). Douglas Engelbart, Augmenting Human Intellect (1962). Semantic Web (RDF, OWL, SPARQL). Palantir Foundry Ontology. Neo4j and Cypher. Zachman Enterprise Architecture (1987).
 - **Inverting.** The RAG-only school: retrieval-augmented generation from unstructured corpora treats the model plus retrieval as the whole system; this chapter inverts by asserting the typed work-graph is the substrate and the model is the interface.
-- **Rejecting outright.** The ticket-graph (Jira epic to story to subtask). The doc-graph (Notion, Confluence trees). "The AI is the moat" positioning.
+- **Rejecting outright.** The ticket-graph (Jira epic to story to subtask). The untyped doc-graph (wiki trees, backlinks and tags with no types). "The AI is the moat" positioning.
 - **Adjacent reading.** Foundation Capital, Context Graphs (Dec 2025). Modern Relay, Branchable Operational Graph (May 2026). Forrester, Build Meaning Before Machines (Evelson, Jun 2026). Ravi Mehta on multiplayer AI and shared team-level context.
 - **Load-bearing to the rest of the site.** Ch5 uses the context layer as the state autonomous loops read from and write back into. Ch6 uses it as the shared substrate that keeps human direction and agent detection coherent over time.
