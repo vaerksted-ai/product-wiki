@@ -72,7 +72,7 @@ Then review each opportunity against your strategic context. Any opportunity can
 
 Because it all sits in one graph, every opportunity traces back to the evidence behind it, and forward to the bet it became.
 
-A word on words. In this chapter the context layer is the whole graph: everything the team has bet on, killed and learned. Strategic context is the part of it that is your written strategy, and it is the yardstick.
+In this chapter the context layer is the whole graph: everything the team has bet on, killed and learned. Strategic context is the part of it that is your written strategy, and it is the yardstick.
 
 ## The framework: four steps
 
@@ -89,9 +89,9 @@ In our own setup an opportunity is a bet in its earliest status, so steps three 
 
 ## Run it every week
 
-Let the reading run all the time. Make the review weekly. Once a week, look at what changed: which insights turned into signal, which opportunities still hold up against your strategic context, and whether one deserves a bet with an owner.
+Let the reading run all the time, and review once a week. Look at what changed: which insights turned into signal, which opportunities still hold up against your strategic context, and whether one deserves a bet with an owner.
 
-Agents do the reading and the grouping. A person makes the call. Inside Maskin we call a loop like this a flow. The rest of this site says loop.
+Inside Maskin we call a loop like this a flow. The rest of this site says loop.
 
 ## From insight to outcome
 
